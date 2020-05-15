@@ -1,11 +1,12 @@
 import React from "react";
 import VideoContentWrapper from "./VideoContentWrapper";
+import VideosList from "./VideosList";
 
-function MainContentWrapper() {
+function MainContentWrapper(props) {
   return (
     <div className="main-content-wrapper">
-      <VideoContentWrapper />
-      <VideosList />
+      <VideoContentWrapper commentsArray={props.commentsArray} />
+      <VideosList videosArray={props.videosArray} />
     </div>
   );
 }

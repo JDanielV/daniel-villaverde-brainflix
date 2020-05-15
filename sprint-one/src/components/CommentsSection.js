@@ -3,14 +3,17 @@ import CommentsList from "./CommentsList";
 
 // Contains the comments form and comments <ul>
 
-function CommentsSection() {
+function CommentsSection(props) {
   return (
     <div className="comments-section__wrapper">
       <span className="comments-section__comments-count">3 Comments</span>
       <div className="comments-section__form-wrapper">
         <div className="comments-section__form-user-img" />
-        <form class="comments-section__form">
-          <label className="comments-section__form-label" for="comment-field">
+        <form className="comments-section__form">
+          <label
+            className="comments-section__form-label"
+            htmlFor="comment-field"
+          >
             Join the conversation
           </label>
           <input
@@ -23,7 +26,7 @@ function CommentsSection() {
           </button>
         </form>
       </div>
-      <CommentsList />
+      <CommentsList commentsArray={props.commentsArray} />
     </div>
   );
 }

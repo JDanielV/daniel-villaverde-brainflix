@@ -1,6 +1,8 @@
 import React from "react";
-
-function Comment() {
+// COMPONENT LEFT UNUSED FOR NOW - DELETE FILE AT THE END IF NOT NEEDED
+// COMPONENT LEFT UNUSED FOR NOW - DELETE FILE AT THE END IF NOT NEEDED
+// COMPONENT LEFT UNUSED FOR NOW - DELETE FILE AT THE END IF NOT NEEDED
+function Comment(props) {
   return (
     <li className="comments-section__comment-li-wrapper">
       <div className="comments-section__comment-user-img" />

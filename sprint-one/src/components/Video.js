@@ -1,5 +1,7 @@
 import React from "react";
-
+// COMPONENT LEFT UNUSED - DELETE BY THE END IF NOT USED
+// COMPONENT LEFT UNUSED - DELETE BY THE END IF NOT USED
+// COMPONENT LEFT UNUSED - DELETE BY THE END IF NOT USED
 function Video() {
   return (
     <li className="videos-list__video-wrapper">

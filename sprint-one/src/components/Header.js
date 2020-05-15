@@ -1,13 +1,10 @@
 import React from "react";
+import logo from "../assets/Logo/Logo-brainflix.png";
 
 function Header() {
   return (
     <header className="header">
-      <img
-        className="header__logo-img"
-        src="../assets/Logo/Logo-brainflix.png"
-        alt="brainflix logo"
-      />
+      <img className="header__logo-img" src={logo} alt="brainflix logo" />
       <input
         className="header__search-bar"
         type="text"
