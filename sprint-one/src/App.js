@@ -97,6 +97,7 @@ class App extends React.Component {
         <MainContentWrapper
           commentsArray={this.state.mainVideo.commentsList}
           videosArray={this.state.sideVideosList}
+          mainVideoDetails={this.state.mainVideo}
         />
       </div>
     );

@@ -7,7 +7,7 @@ function VideoContentWrapper(props) {
   return (
     <main className="video-content-wrapper">
       <MainVideo />
-      <VideoDetails />
+      <VideoDetails mainVideoDetails={props.mainVideoDetails} />
       <CommentsSection commentsArray={props.commentsArray} />
     </main>
   );

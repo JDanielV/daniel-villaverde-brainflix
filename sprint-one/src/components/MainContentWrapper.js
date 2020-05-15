@@ -5,7 +5,10 @@ import VideosList from "./VideosList";
 function MainContentWrapper(props) {
   return (
     <div className="main-content-wrapper">
-      <VideoContentWrapper commentsArray={props.commentsArray} />
+      <VideoContentWrapper
+        commentsArray={props.commentsArray}
+        mainVideoDetails={props.mainVideoDetails}
+      />
       <VideosList videosArray={props.videosArray} />
     </div>
   );
