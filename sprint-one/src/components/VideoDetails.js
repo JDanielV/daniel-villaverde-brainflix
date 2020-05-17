@@ -7,7 +7,7 @@ function VideoDetails(props) {
     // Video title, author, timestamp and stats
     <div className="video-details">
       <div className="video-details__title-author-stats-wrapper">
-        <h2 className="video-details__title">{props.mainVideoDetails.title}</h2>
+        <h1 className="video-details__title">{props.mainVideoDetails.title}</h1>
         <div className="video-details__author-date-wrapper">
           <span className="video-details__author">
             {props.mainVideoDetails.user}
@@ -20,7 +20,7 @@ function VideoDetails(props) {
           <div className="video-details__views-wrapper">
             <img
               className="video-details__views-icon"
-              src="../assets/Icons/Icon-views.png"
+              src="assets/Icons/PNG/Icon-views.png"
               alt="views icon"
             />
             <span className="video-details__views-count">
@@ -30,7 +30,7 @@ function VideoDetails(props) {
           <div className="video-details__likes-wrapper">
             <img
               className="video-details__likes-icon"
-              src="../assets/Icons/Icon-likes.png"
+              src="assets/Icons/PNG/Icon-likes.png"
               alt="likes icon"
             />
             <span className="video-details__likes-count">

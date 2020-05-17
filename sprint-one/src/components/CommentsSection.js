@@ -5,7 +5,7 @@ import CommentsList from "./CommentsList";
 
 function CommentsSection(props) {
   return (
-    <div className="comments-section__wrapper">
+    <div className="comments-section">
       <span className="comments-section__comments-count">3 Comments</span>
       <div className="comments-section__form-wrapper">
         <div className="comments-section__form-user-img" />
@@ -16,7 +16,7 @@ function CommentsSection(props) {
           >
             Join the conversation
           </label>
-          <input
+          <textarea
             type="text"
             className="comments-section__form-input"
             name="comment-field"

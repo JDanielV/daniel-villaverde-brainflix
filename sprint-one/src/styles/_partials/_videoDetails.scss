@@ -1,0 +1,67 @@
+.video-details {
+  padding: 2rem 1rem 2.5rem 1rem;
+  color: $nav-text-black;
+
+  &__title-author-stats-wrapper {
+    border-bottom: 1px solid $darker-gray;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    font-family: "Avenir Next Bold";
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  &__author-date-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  &__author {
+    font-family: "Avenir Next Demi Bold";
+    font-size: 0.875rem;
+  }
+
+  &__date {
+    margin-left: 0.5rem;
+    color: $darker-gray;
+    font-size: 0.875rem;
+  }
+
+  &__stats-wrapper {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+  }
+
+  &__views-wrapper,
+  &__likes-wrapper {
+    display: flex;
+  }
+
+  &__views-icon {
+    width: 22px;
+    height: 16px;
+  }
+
+  &__likes-icon {
+    width: 17px;
+    height: 16px;
+  }
+
+  &__views-count,
+  &__likes-count {
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+
+  &__description {
+    font-size: 0.78rem;
+    line-height: 1.125rem;
+    margin: 0;
+  }
+}

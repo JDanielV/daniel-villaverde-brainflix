@@ -1,0 +1,13 @@
+.main-video {
+  height: 11.437rem;
+  background-color: black;
+
+  &__video {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  //MOVE TO _PARTIAL FILE WHEN FINISHED STYLING
+  //OVERLAY CONTROLS MOCKUP STILL PENDING
+}

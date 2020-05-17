@@ -2,6 +2,9 @@
 @import "_partials/breakpoints";
 @import "_partials/fonts";
 @import "_partials/header";
+@import "_partials/mainVideo";
+@import "_partials/videoDetails";
+@import "_partials/comments";
 
 * {
   box-sizing: border-box;
@@ -10,20 +13,11 @@
 body {
   width: 100%;
   max-width: 100vw;
+  font-family: "Avenir Next";
 }
 
 .main-content-wrapper {
   //display: flex here for tablet and desktop
   max-width: 100vw;
   overflow: hidden;
-}
-
-.main-video {
-  height: 11.437rem;
-
-  &__video {
-    width: auto;
-    height: 100%;
-  }
-  //MOVE TO _PARTIAL FILE WHEN FINISHED STYLING
 }
