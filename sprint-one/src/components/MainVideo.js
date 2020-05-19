@@ -1,6 +1,6 @@
 import React from "react";
 
-function MainVideo() {
+function MainVideo(props) {
   return (
     <div className="main-video">
       <div className="main-video__controls-overlay">
@@ -9,6 +9,11 @@ function MainVideo() {
         </button>
         <div className="main-video__time-bar">
           <div className="main-video__time-line"></div>
+          <div className="main-video__duration-wrapper">
+            <span className="main-video__duration">
+              {props.mainVideoDetails.duration}
+            </span>
+          </div>
         </div>
         <div className="main-video__fullscreen-volume-buttons">
           <button className="main-video__button main-video__button--fullscreen">

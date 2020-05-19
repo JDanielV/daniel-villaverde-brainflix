@@ -6,7 +6,7 @@ import MainVideo from "./MainVideo";
 function VideoContentWrapper(props) {
   return (
     <main className="video-content-wrapper">
-      <MainVideo />
+      <MainVideo mainVideoDetails={props.mainVideoDetails} />
       <VideoDetails mainVideoDetails={props.mainVideoDetails} />
       <CommentsSection commentsArray={props.commentsArray} />
     </main>
