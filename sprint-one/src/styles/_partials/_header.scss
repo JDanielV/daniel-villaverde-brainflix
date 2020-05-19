@@ -16,6 +16,10 @@
     justify-content: space-between;
   }
 
+  @include desktop {
+    padding: 1rem 10.5rem;
+  }
+
   &__logo-img {
     width: 7.5rem;
     height: 1.5rem;
@@ -24,6 +28,10 @@
     @include tablet {
       margin: auto 10.562rem auto 0;
     }
+
+    @include desktop {
+      margin: auto 0 auto 0;
+    }
   }
 
   &__search-button-img-wrapper {
@@ -31,6 +39,10 @@
       display: flex;
       width: 56.119%;
       justify-content: flex-end;
+    }
+
+    @include desktop {
+      margin-left: 31.812rem;
     }
   }
 
@@ -57,6 +69,9 @@
     @include tablet {
       margin: auto 1.5rem auto 0;
     }
+
+    @include desktop {
+    }
   }
 
   &__button-img-wrapper {
@@ -64,6 +79,10 @@
     height: 3rem;
     display: flex;
     // justify-content: space-between;
+
+    @include desktop {
+      width: 12rem;
+    }
   }
 
   &__button {
