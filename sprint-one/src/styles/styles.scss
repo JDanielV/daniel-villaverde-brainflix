@@ -17,13 +17,22 @@ body {
   font-family: "Avenir Next";
 }
 
-.main-content-wrapper {
+.main-content {
   //display: flex here for desktop
   max-width: 100vw;
   overflow: hidden;
 }
 
-.video-content-wrapper__section-flexer {
-  display: flex;
-  padding: 0 10.5rem;
+.main-content__wrapper {
+  @include desktop {
+    display: flex;
+    padding: 0 10.5rem;
+  }
+}
+
+.video-content-wrapper {
+  @include desktop {
+    border-right: 1px solid $darker-gray;
+    width: 44.5rem;
+  }
 }

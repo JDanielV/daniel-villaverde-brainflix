@@ -6,6 +6,10 @@
     padding: 3rem 1.5rem 4rem 1.5rem;
   }
 
+  @include desktop {
+    padding: 2.5rem 0 4rem 0;
+  }
+
   &__title-author-stats-wrapper {
     border-bottom: 1px solid $darker-gray;
     padding-bottom: 1.5rem;
@@ -70,6 +74,10 @@
 
     @include tablet {
       width: 13.5rem;
+    }
+
+    @include desktop {
+      margin-right: 2rem;
     }
   }
 
