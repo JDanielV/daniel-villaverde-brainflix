@@ -326,6 +326,12 @@
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 768px) {
+  .video-details__title-author-stats-wrapper {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .video-details__title {
   font-family: "Avenir Next Bold";
   margin-top: 0;
@@ -341,8 +347,25 @@
   }
 }
 
+@media (min-width: 768px) {
+  .video-details__author-stats-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .video-details__author-date-wrapper {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .video-details__author-date-wrapper {
+    margin-bottom: 0;
+  }
 }
 
 .video-details__author {
@@ -378,6 +401,12 @@
           justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .video-details__stats-wrapper {
+    width: 13.5rem;
+  }
+}
+
 .video-details__views-wrapper, .video-details__likes-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,16 +423,36 @@
   height: 16px;
 }
 
+@media (min-width: 768px) {
+  .video-details__likes-icon {
+    margin-left: 1.5rem;
+  }
+}
+
 .video-details__views-count, .video-details__likes-count {
   font-size: 0.875rem;
   display: inline-block;
   margin-left: 0.5rem;
 }
 
+@media (min-width: 768px) {
+  .video-details__views-count, .video-details__likes-count {
+    font-size: 1rem;
+  }
+}
+
 .video-details__description {
   font-size: 0.78rem;
   line-height: 1.125rem;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .video-details__description {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    width: 72%;
+  }
 }
 
 .comments-section {
