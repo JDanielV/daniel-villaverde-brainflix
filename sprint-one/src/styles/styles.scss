@@ -18,7 +18,6 @@ body {
 }
 
 .main-content {
-  //display: flex here for desktop
   max-width: 100vw;
   overflow: hidden;
 }
@@ -26,6 +25,8 @@ body {
 .main-content__wrapper {
   @include desktop {
     display: flex;
+    max-width: 90rem;
+    margin: 0 auto;
     padding: 0 10.5rem;
   }
 }

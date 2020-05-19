@@ -81,6 +81,12 @@
   }
 }
 
+.header__search-button-img-wrapper {
+  width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 768px) {
   .header__search-button-img-wrapper {
     display: -webkit-box;
@@ -123,6 +129,12 @@
 @media (min-width: 768px) {
   .header__search-bar {
     margin: auto 1.5rem auto 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__search-bar {
+    max-width: 21.5rem;
   }
 }
 
@@ -856,6 +868,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 90rem;
+    margin: 0 auto;
     padding: 0 10.5rem;
   }
 }
