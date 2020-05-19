@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0.5rem;
 
     @include tablet {
       width: 67.578%;
@@ -68,16 +69,22 @@
     border: 2px solid black;
     border-radius: 2px;
     width: 75%;
-    margin-left: 1rem;
+
+    @include tablet {
+      margin-left: 1rem;
+    }
   }
 
   &__duration {
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    color: $clear-gray;
-    height: 2rem;
-    font-size: 0.812rem;
-    margin: 0 1rem;
+    display: none;
+    @include tablet {
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      color: $clear-gray;
+      height: 2rem;
+      font-size: 0.812rem;
+      margin: 0 1rem;
+    }
   }
 
   &__fullscreen-volume-buttons {
