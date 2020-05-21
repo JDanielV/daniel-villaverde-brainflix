@@ -179,10 +179,15 @@
   background-color: #0065ad;
 }
 
+.header__button:visited {
+  color: white;
+}
+
 .header__button-plus-sign {
   font-size: 1.5rem;
   display: inline-block;
   padding-top: 0.1rem;
+  color: white;
 }
 
 .header__button-text {
@@ -190,6 +195,7 @@
   display: inline-block;
   margin-left: 0.5rem;
   padding-top: 0.3rem;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -845,6 +851,149 @@
   margin: 0 0 0 1rem;
   font-size: 0.812rem;
   line-height: 1.125rem;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(/assets/_GlobalFont/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+  font-family: "Avenir Next Demi Bold";
+  src: url(/assets/_GlobalFont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf);
+}
+
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url(/assets/_GlobalFont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf);
+}
+
+.video-upload {
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #e1e1e1;
+  color: #323232;
+}
+
+.video-upload__title {
+  font-family: "Avenir Next Bold";
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .video-upload__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+.video-upload__thumbnail-container {
+  max-width: 100%;
+  height: 9.562rem;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.video-upload__thumbnail {
+  min-width: 7.5rem;
+  max-width: 100%;
+  border-radius: 5px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.video-upload__form-label {
+  font-family: "Avenir Next Demi Bold";
+  text-transform: uppercase;
+  color: #afafaf;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.video-upload__form-title-input {
+  font-family: "Avenir Next";
+  color: #323232;
+  font-size: 0.812rem;
+  line-height: 1.125rem;
+  background-color: #fafafa;
+  width: 100%;
+  border-radius: 4px;
+  height: 3rem;
+  padding: 0.7rem 0.7rem;
+  border: solid 2px #e1e1e1;
+  resize: none;
+  margin-bottom: 1.5rem;
+}
+
+.video-upload__form-description-input {
+  font-family: "Avenir Next";
+  color: #323232;
+  font-size: 0.812rem;
+  line-height: 1.125rem;
+  background-color: #fafafa;
+  width: 100%;
+  border-radius: 4px;
+  height: 8.937rem;
+  padding: 0.7rem 0.7rem;
+  border: solid 2px #e1e1e1;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+.video-upload__button-publish {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: #0095ff;
+  width: 100%;
+  height: 2.8rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
+}
+
+.video-upload__button-publish:hover {
+  background-color: #0065ad;
+}
+
+.video-upload__button-cancel {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  color: #0095ff;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  margin-bottom: auto;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
 }
 
 * {

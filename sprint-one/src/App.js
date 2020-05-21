@@ -2,6 +2,12 @@ import React from "react";
 import "./styles/styles.css";
 import Header from "./components/Header";
 import MainContentWrapper from "./components/MainContentWrapper";
+import VideoUpload from "./components/VideoUpload";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+
+const API_KEY = "421e4c50-688c-40be-b94e-48ad7fe69918";
+const apiLink =
+  "https://project-2-api.herokuapp.com?api_key=421e4c50-688c-40be-b94e-48ad7fe69918";
 
 class App extends React.Component {
   state = {
@@ -94,12 +100,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <MainContentWrapper
-          commentsArray={this.state.mainVideo.commentsList}
-          videosArray={this.state.sideVideosList}
-          mainVideoDetails={this.state.mainVideo}
-        />
+        <Router>
+          <Header />
+          <Switch>
+            <Route path="/video-upload" component={VideoUpload} />
+            <MainContentWrapper
+              commentsArray={this.state.mainVideo.commentsList}
+              videosArray={this.state.sideVideosList}
+              mainVideoDetails={this.state.mainVideo}
+            />
+          </Switch>
+        </Router>
       </div>
     );
   }
