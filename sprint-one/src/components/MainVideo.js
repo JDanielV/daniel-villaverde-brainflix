@@ -26,7 +26,7 @@ function MainVideo(props) {
       </div>
       <video
         className="main-video__video"
-        poster="./assets/images/video-list-0.jpg"
+        poster={props.mainVideoDetails.image}
       ></video>
     </div>
   );

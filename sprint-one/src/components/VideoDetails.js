@@ -11,7 +11,7 @@ function VideoDetails(props) {
         <div className="video-details__author-stats-wrapper">
           <div className="video-details__author-date-wrapper">
             <span className="video-details__author">
-              {props.mainVideoDetails.user}
+              {props.mainVideoDetails.channel}
             </span>
             <span className="video-details__date">
               {props.mainVideoDetails.timestamp}

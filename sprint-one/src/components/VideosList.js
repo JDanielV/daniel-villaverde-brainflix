@@ -10,13 +10,13 @@ function VideosList(props) {
             <div className="videos-list__video-thumbnail-container">
               <img
                 className="videos-list__video-thumbnail"
-                src={sideVideo.thumbnailUrl}
+                src={sideVideo.image}
                 alt="next video thumbnail"
               />
             </div>
             <div className="videos-list__video-details-wrapper">
               <h4 className="videos-list__video-title">{sideVideo.title}</h4>
-              <h5 className="videos-list__video-author">{sideVideo.user}</h5>
+              <h5 className="videos-list__video-author">{sideVideo.channel}</h5>
             </div>
           </li>
         ))}
