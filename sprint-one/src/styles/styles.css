@@ -810,6 +810,8 @@
   height: 4.375rem;
   margin-bottom: 1.5rem;
   max-width: 20rem;
+  text-decoration: none;
+  color: #323232;
 }
 
 @media (min-width: 1440px) {

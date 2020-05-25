@@ -23,6 +23,8 @@
     height: 4.375rem;
     margin-bottom: 1.5rem;
     max-width: 20rem;
+    text-decoration: none;
+    color: $nav-text-black;
 
     @include desktop {
       margin-bottom: 2.5rem;

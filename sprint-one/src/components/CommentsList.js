@@ -1,7 +1,19 @@
 import React from "react";
 
 function CommentsList(props) {
-  console.log(props);
+  if (props.commentsArray === undefined) {
+    return <p>Loading...</p>;
+  }
+  const FormatDate = (timestamp) => {
+    const dateObj = new Date(timestamp);
+
+    const day = dateObj.getDate();
+    const month = dateObj.getMonth();
+    const year = dateObj.getFullYear();
+    console.log(day);
+
+    return `${month}/${day}/${year}`;
+  };
   return (
     <ul className="comments-section__comments-ul">
       {props.commentsArray &&
@@ -14,7 +26,7 @@ function CommentsList(props) {
                   {comment.name}
                 </span>
                 <span className="comments-section__comment-timestamp">
-                  {comment.timestamp}
+                  {FormatDate(comment.timestamp)}
                 </span>
               </div>
               <p className="comments-section__comment-content">

@@ -1,6 +1,6 @@
 import React from "react";
 
-function MainVideo(props) {
+function MainVideo({ mainVideoDetails }) {
   return (
     <div className="main-video">
       <div className="main-video__controls-overlay">
@@ -11,7 +11,7 @@ function MainVideo(props) {
           <div className="main-video__time-line"></div>
           <div className="main-video__duration-wrapper">
             <span className="main-video__duration">
-              {props.mainVideoDetails.duration}
+              {mainVideoDetails.duration}
             </span>
           </div>
         </div>
@@ -26,7 +26,7 @@ function MainVideo(props) {
       </div>
       <video
         className="main-video__video"
-        poster={props.mainVideoDetails.image}
+        poster={mainVideoDetails.image}
       ></video>
     </div>
   );

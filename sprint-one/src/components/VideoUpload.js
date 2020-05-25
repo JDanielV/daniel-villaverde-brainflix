@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const VideoUpload = () => {
   return (
@@ -45,7 +45,7 @@ const VideoUpload = () => {
       </div>
       <div className="video-upload__buttons-wrapper">
         <a className="video-upload__button-publish">Publish</a>
-        <Link to="/" className="video-upload__button-cancel">
+        <Link to="/videos" className="video-upload__button-cancel">
           Cancel
         </Link>
       </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "../Logo/Logo-brainflix.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
-      <Link to="/" className="header__logo-img">
+      <Link to="/videos" className="header__logo-img">
         <img src={logo} alt="brainflix logo" />
       </Link>
       <div className="header__search-button-img-wrapper">

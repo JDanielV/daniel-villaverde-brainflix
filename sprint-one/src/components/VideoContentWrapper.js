@@ -1,13 +1,12 @@
 import React from "react";
 import CommentsSection from "./CommentsSection";
 import VideoDetails from "./VideoDetails";
-import MainVideo from "./MainVideo";
 
-function VideoContentWrapper(props) {
+function VideoContentWrapper({ commentsArray, mainVideoDetails }) {
   return (
     <main className="video-content-wrapper">
-      <VideoDetails mainVideoDetails={props.mainVideoDetails} />
-      <CommentsSection commentsArray={props.commentsArray} />
+      <VideoDetails mainVideoDetails={mainVideoDetails} />
+      <CommentsSection commentsArray={commentsArray} />
     </main>
   );
 }
