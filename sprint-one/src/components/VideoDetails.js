@@ -9,7 +9,6 @@ function VideoDetails({ mainVideoDetails }) {
     const day = dateObj.getDate();
     const month = dateObj.getMonth();
     const year = dateObj.getFullYear();
-    console.log(day);
 
     return `${month}/${day}/${year}`;
   };

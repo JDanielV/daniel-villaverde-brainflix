@@ -7,6 +7,15 @@
   border-top: 1px solid $normal-gray;
   color: $nav-text-black;
 
+  @include tablet {
+    padding: 3rem 1.5rem;
+  }
+
+  @include desktop {
+    border-top: none;
+    padding: 0 10.5rem;
+  }
+
   &__title {
     font-family: "Avenir Next Bold";
     margin-top: 0;
@@ -20,13 +29,32 @@
     }
   }
 
+  &__thumbnail-form-wrapper {
+    padding-top: 2.5rem;
+    border-top: 1px solid $darker-gray;
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
   &__thumbnail-container {
-    max-width: 100%;
+    width: 18rem;
     height: 9.562rem;
     overflow: hidden;
     border-radius: 5px;
     position: relative;
     margin-bottom: 2rem;
+
+    @include tablet {
+      width: 21.5rem;
+      height: 11.437rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @include desktop {
+      margin-right: 1.5rem;
+    }
   }
 
   &__thumbnail {
@@ -37,6 +65,7 @@
   }
 
   &__form {
+    width: 100%;
   }
 
   &__form-label {
@@ -75,6 +104,24 @@
     border: solid 2px $normal-gray;
     margin-bottom: 2rem;
     resize: none;
+
+    @include desktop {
+      height: 5.75rem;
+    }
+  }
+
+  &__buttons-wrapper {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    @include desktop {
+      padding-top: 2.5rem;
+      border-top: 1px solid $darker-gray;
+    }
   }
 
   &__button-publish {
@@ -95,8 +142,13 @@
     font-size: 0.8rem;
     padding-top: 0.3rem;
 
+    @include tablet {
+      width: 10rem;
+    }
+
     &:hover {
       background-color: $hover-cta;
+      cursor: pointer;
     }
   }
   &__button-cancel {
@@ -114,5 +166,12 @@
     margin-bottom: auto;
     font-size: 0.8rem;
     padding-top: 0.3rem;
+
+    @include tablet {
+      width: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 3rem;
+    }
   }
 }

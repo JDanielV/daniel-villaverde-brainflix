@@ -6,18 +6,20 @@ const VideoUpload = () => {
     <section className="video-upload">
       <h1 className="video-upload__title">Upload Video</h1>
       <div className="video-upload__thumbnail-form-wrapper">
-        <label className="video-upload__form-label" htmlFor="videoThumbnail">
-          Video thumbnail
-        </label>
-        <div
-          className="video-upload__thumbnail-container"
-          name="videoThumbnail"
-        >
-          <img
-            className="video-upload__thumbnail"
-            src="/assets/Images/Upload-video-preview.jpg"
-            alt="video thumbnail"
-          />
+        <div className="video-upload__label-thumbnail-wrapper">
+          <label className="video-upload__form-label" htmlFor="videoThumbnail">
+            Video thumbnail
+          </label>
+          <div
+            className="video-upload__thumbnail-container"
+            name="videoThumbnail"
+          >
+            <img
+              className="video-upload__thumbnail"
+              src="/assets/Images/Upload-video-preview.jpg"
+              alt="video thumbnail"
+            />
+          </div>
         </div>
         <form className="video-upload__form">
           <label className="video-upload__form-label" htmlFor="titleInput">

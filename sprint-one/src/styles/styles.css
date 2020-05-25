@@ -686,6 +686,7 @@
     display: inline-block;
     margin-bottom: 0;
     margin-right: 2.5rem;
+    cursor: pointer;
   }
 }
 
@@ -876,6 +877,19 @@
   color: #323232;
 }
 
+@media (min-width: 768px) {
+  .video-upload {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .video-upload {
+    border-top: none;
+    padding: 0 10.5rem;
+  }
+}
+
 .video-upload__title {
   font-family: "Avenir Next Bold";
   margin-top: 0;
@@ -891,13 +905,40 @@
   }
 }
 
+.video-upload__thumbnail-form-wrapper {
+  padding-top: 2.5rem;
+  border-top: 1px solid #afafaf;
+}
+
+@media (min-width: 1440px) {
+  .video-upload__thumbnail-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .video-upload__thumbnail-container {
-  max-width: 100%;
+  width: 18rem;
   height: 9.562rem;
   overflow: hidden;
   border-radius: 5px;
   position: relative;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .video-upload__thumbnail-container {
+    width: 21.5rem;
+    height: 11.437rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .video-upload__thumbnail-container {
+    margin-right: 1.5rem;
+  }
 }
 
 .video-upload__thumbnail {
@@ -906,6 +947,10 @@
   border-radius: 5px;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.video-upload__form {
+  width: 100%;
 }
 
 .video-upload__form-label {
@@ -946,6 +991,35 @@
   resize: none;
 }
 
+@media (min-width: 1440px) {
+  .video-upload__form-description-input {
+    height: 5.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-upload__buttons-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .video-upload__buttons-wrapper {
+    padding-top: 2.5rem;
+    border-top: 1px solid #afafaf;
+  }
+}
+
 .video-upload__button-publish {
   display: inline-block;
   display: -webkit-box;
@@ -971,8 +1045,15 @@
   padding-top: 0.3rem;
 }
 
+@media (min-width: 768px) {
+  .video-upload__button-publish {
+    width: 10rem;
+  }
+}
+
 .video-upload__button-publish:hover {
   background-color: #0065ad;
+  cursor: pointer;
 }
 
 .video-upload__button-cancel {
@@ -996,6 +1077,15 @@
   margin-bottom: auto;
   font-size: 0.8rem;
   padding-top: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .video-upload__button-cancel {
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 3rem;
+  }
 }
 
 * {
