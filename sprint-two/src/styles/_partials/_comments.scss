@@ -1,0 +1,207 @@
+.comments-section {
+  // COMMENT FORM BEGINS
+
+  padding: 0 1rem;
+  color: $nav-text-black;
+  margin-bottom: 2.5rem;
+  font-family: "Avenir Next";
+
+  @include tablet {
+    padding: 0 1.5rem;
+  }
+
+  @include desktop {
+    padding: 2.5rem 0 0 0;
+  }
+
+  &__comments-count {
+    display: inline-block;
+    font-family: "Avenir Next Demi Bold";
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+
+    @include tablet {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 18rem;
+    margin: 0 auto;
+
+    @include tablet {
+      align-items: center;
+      justify-content: space-between;
+      max-width: 45rem;
+    }
+  }
+
+  &__form {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 41.25rem;
+    }
+  }
+
+  &__form-user-img {
+    width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    background-image: url(/assets/Images/Mohan-muruge.jpg);
+    background-position: left;
+    background-size: cover;
+    border-radius: 40px;
+    margin-top: 1.3rem;
+    margin-right: 0.8rem;
+
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+
+  &__form-input-wrapper {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      width: 66.75%;
+      margin-right: 1rem;
+    }
+  }
+
+  &__form-label {
+    font-family: "Avenir Next Demi Bold";
+    text-transform: uppercase;
+    color: $darker-gray;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  &__form-input {
+    font-family: "Avenir Next";
+    color: $nav-text-black;
+    font-size: 0.812rem;
+    line-height: 1.125rem;
+    background-color: $clear-gray;
+    width: 100%;
+    border-radius: 4px;
+    height: 6rem;
+    padding: 0.7rem 0.7rem;
+    border: solid 2px $normal-gray;
+    margin-bottom: 1rem;
+    resize: none;
+
+    @include tablet {
+      height: 3rem;
+      width: 100%;
+      margin-bottom: 1.3rem;
+      padding: 0.8rem 0.7rem;
+    }
+
+    &:focus {
+      border-color: $primary-cta;
+      outline: none;
+    }
+  }
+
+  &__form-button {
+    font-family: "Avenir Next Demi Bold";
+    height: 3rem;
+    width: 100%;
+    background-color: $primary-cta;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin-bottom: 1.5rem;
+
+    @include tablet {
+      width: 10rem;
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    &:hover {
+      background-color: $hover-cta;
+    }
+  }
+
+  // COMMENTS UL BEGINS
+
+  &__comments-ul {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 30.625rem;
+    padding-left: 0;
+
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+
+  &__comment-li-wrapper {
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid $normal-gray;
+    border-top: 1px solid $normal-gray;
+    min-width: 18rem;
+    padding: 1.5rem 0;
+    font-size: 0.875rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__comment-user-img {
+    width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    background-color: $normal-gray;
+    border-radius: 40px;
+    margin-right: 0.8rem;
+  }
+
+  &__comment-user-timestamp-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      justify-content: flex-start;
+    }
+  }
+
+  &__comment-user {
+    font-family: "Avenir Next Demi Bold";
+    color: $nav-text-black;
+    display: inline-block;
+  }
+
+  &__comment-timestamp {
+    display: inline-block;
+    color: $darker-gray;
+
+    @include tablet {
+      margin-left: 1rem;
+    }
+  }
+
+  &__comment-content {
+    margin-bottom: 0;
+    line-height: 1.125rem;
+
+    @include tablet {
+      width: 93%;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
+  }
+}
