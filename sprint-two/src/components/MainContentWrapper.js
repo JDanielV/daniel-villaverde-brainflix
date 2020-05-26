@@ -56,6 +56,27 @@ class MainContentWrapper extends React.Component {
     }
   }
 
+  // SubmitComment function in parent, catching
+  // the "comment" input from CommentsSection
+  submitComment = (event, comment, videoId) => {
+    event.preventDefault();
+
+    const name = "Anon User";
+    const commentObj = { name: name, comment: comment };
+
+    axios
+      .post(
+        `${this.apiLink}${this.videosListEndpoint}${videoId}/comments${API_KEY}`,
+        commentObj
+      )
+      .then((response) => {
+        // console.log(response.data);
+        this.getVideo(videoId);
+      })
+      .catch((err) => console.log(err));
+    console.log("we finished posting");
+  };
+
   render() {
     return (
       <div className="main-content">
@@ -64,6 +85,7 @@ class MainContentWrapper extends React.Component {
           <VideoContentWrapper
             commentsArray={this.state.mainVideo.comments}
             mainVideoDetails={this.state.mainVideo}
+            submitComment={this.submitComment}
           />
           <VideosList
             videosArray={this.state.videosList}
