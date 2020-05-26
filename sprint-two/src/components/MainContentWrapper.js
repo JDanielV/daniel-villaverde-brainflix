@@ -61,7 +61,8 @@ class MainContentWrapper extends React.Component {
   submitComment = (event, comment, videoId) => {
     event.preventDefault();
 
-    const name = "Anon User";
+    const name = "BrainStation Man";
+
     const commentObj = { name: name, comment: comment };
 
     axios
