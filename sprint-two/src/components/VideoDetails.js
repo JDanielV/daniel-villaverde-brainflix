@@ -31,7 +31,7 @@ function VideoDetails({ mainVideoDetails }) {
             <div className="video-details__views-wrapper">
               <img
                 className="video-details__views-icon"
-                src="assets/Icons/PNG/Icon-views.png"
+                src="/assets/Icons/PNG/Icon-views.png"
                 alt="views icon"
               />
               <span className="video-details__views-count">
@@ -41,7 +41,7 @@ function VideoDetails({ mainVideoDetails }) {
             <div className="video-details__likes-wrapper">
               <img
                 className="video-details__likes-icon"
-                src="assets/Icons/PNG/Icon-likes.png"
+                src="/assets/Icons/PNG/Icon-likes.png"
                 alt="likes icon"
               />
               <span className="video-details__likes-count">

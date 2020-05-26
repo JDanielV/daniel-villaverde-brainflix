@@ -7,9 +7,6 @@
 
   @include tablet {
     height: 52.1vw;
-  }
-
-  @include tablet {
     max-height: 33.75rem;
   }
 
@@ -19,16 +16,12 @@
     justify-content: center;
     height: 2rem;
     width: 100%;
-
     bottom: 1rem;
 
     @include tablet {
-    }
-
-    @include desktop {
       max-width: 71.25rem;
       left: 50%;
-      margin-left: -35.625rem;
+      transform: translateX(-50%);
     }
   }
 
@@ -120,5 +113,6 @@
     height: 100%;
     display: block;
     margin: 0 auto;
+    object-fit: cover;
   }
 }

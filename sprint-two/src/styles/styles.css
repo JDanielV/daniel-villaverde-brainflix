@@ -234,11 +234,6 @@
 @media (min-width: 768px) {
   .main-video {
     height: 52.1vw;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-video {
     max-height: 33.75rem;
   }
 }
@@ -256,11 +251,12 @@
   bottom: 1rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .main-video__controls-overlay {
     max-width: 71.25rem;
     left: 50%;
-    margin-left: -35.625rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -368,6 +364,8 @@
   height: 100%;
   display: block;
   margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video-details {
