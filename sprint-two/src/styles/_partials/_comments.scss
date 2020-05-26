@@ -141,8 +141,6 @@
     width: 100%;
     max-width: 30.625rem;
     padding-left: 0;
-    display: flex;
-    flex-direction: column-reverse;
 
     @include tablet {
       max-width: 100%;

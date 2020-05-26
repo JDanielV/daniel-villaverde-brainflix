@@ -4,6 +4,12 @@ function CommentsList(props) {
   if (props.commentsArray === undefined) {
     return <p>Loading...</p>;
   }
+
+  function sortByDate(array) {
+    const sortedArray = array.sort((a, b) => b.timestamp - a.timestamp);
+    return sortedArray;
+  }
+
   const FormatDate = (timestamp) => {
     const dateObj = new Date(timestamp);
 
@@ -16,7 +22,7 @@ function CommentsList(props) {
   return (
     <ul className="comments-section__comments-ul">
       {props.commentsArray &&
-        props.commentsArray.map((comment) => (
+        sortByDate(props.commentsArray).map((comment) => (
           <li key={comment.id} className="comments-section__comment-li-wrapper">
             <div className="comments-section__comment-user-img" />
             <div className="comments-section__comment-info-wrapper">

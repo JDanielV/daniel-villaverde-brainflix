@@ -2,12 +2,6 @@ import React from "react";
 import VideoContentWrapper from "./VideoContentWrapper";
 import VideosList from "./VideosList";
 import MainVideo from "./MainVideo";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
 import axios from "axios";
 
 const API_KEY = "?api_key=421e4c50-688c-40be-b94e-48ad7fe69918";
