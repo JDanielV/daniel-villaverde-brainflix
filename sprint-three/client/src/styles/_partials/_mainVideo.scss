@@ -1,0 +1,118 @@
+.main-video {
+  height: 57.2vw;
+  max-height: 25rem;
+  background-color: black;
+  display: flex;
+  position: relative;
+
+  @include tablet {
+    height: 52.1vw;
+    max-height: 33.75rem;
+  }
+
+  &__controls-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    width: 100%;
+    bottom: 1rem;
+
+    @include tablet {
+      max-width: 71.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 0;
+    width: 2.8rem;
+    height: 2rem;
+
+    &--play {
+      background-image: url("/assets/Icons/PNG/Icon-play.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--fullscreen {
+      background-image: url("/assets/Icons/PNG/Icon-fullscreen.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 2.5rem;
+    }
+
+    &--volume {
+      background-image: url("/assets/Icons/PNG/Icon-volume.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 2.5rem;
+    }
+  }
+
+  &__time-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+
+    @include tablet {
+      width: 67.578%;
+      margin: 0 1rem;
+    }
+  }
+
+  &__time-line {
+    opacity: 1;
+    height: 0.2rem;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 75%;
+
+    @include tablet {
+      margin-left: 1rem;
+    }
+  }
+
+  &__duration {
+    display: none;
+
+    @include tablet {
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      color: $clear-gray;
+      height: 2rem;
+      font-size: 0.812rem;
+      margin: auto 1rem;
+      padding: 0.55rem 0;
+    }
+  }
+
+  &__fullscreen-volume-buttons {
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 5px;
+    width: 5.5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__video {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}

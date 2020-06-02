@@ -1,0 +1,177 @@
+@import "./variables";
+@import "./breakpoints";
+@import "./fonts";
+
+.video-upload {
+  padding: 1.5rem 1rem;
+  border-top: 1px solid $normal-gray;
+  color: $nav-text-black;
+
+  @include tablet {
+    padding: 3rem 1.5rem;
+  }
+
+  @include desktop {
+    border-top: none;
+    padding: 0 10.5rem;
+  }
+
+  &__title {
+    font-family: "Avenir Next Bold";
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    @include tablet {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+    }
+  }
+
+  &__thumbnail-form-wrapper {
+    padding-top: 2.5rem;
+    border-top: 1px solid $darker-gray;
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__thumbnail-container {
+    width: 18rem;
+    height: 9.562rem;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 2rem;
+
+    @include tablet {
+      width: 21.5rem;
+      height: 11.437rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @include desktop {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__thumbnail {
+    min-width: 7.5rem;
+    max-width: 100%;
+    border-radius: 5px;
+    transform: scale(1.2);
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &__form-label {
+    font-family: "Avenir Next Demi Bold";
+    text-transform: uppercase;
+    color: $darker-gray;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  &__form-title-input {
+    font-family: "Avenir Next";
+    color: $nav-text-black;
+    font-size: 0.812rem;
+    line-height: 1.125rem;
+    background-color: $clear-gray;
+    width: 100%;
+    border-radius: 4px;
+    height: 3rem;
+    padding: 0.7rem 0.7rem;
+    border: solid 2px $normal-gray;
+    resize: none;
+    margin-bottom: 1.5rem;
+  }
+
+  &__form-description-input {
+    font-family: "Avenir Next";
+    color: $nav-text-black;
+    font-size: 0.812rem;
+    line-height: 1.125rem;
+    background-color: $clear-gray;
+    width: 100%;
+    border-radius: 4px;
+    height: 8.937rem;
+    padding: 0.7rem 0.7rem;
+    border: solid 2px $normal-gray;
+    margin-bottom: 2rem;
+    resize: none;
+
+    @include desktop {
+      height: 5.75rem;
+    }
+  }
+
+  &__buttons-wrapper {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    @include desktop {
+      padding-top: 2.5rem;
+      border-top: 1px solid $darker-gray;
+    }
+  }
+
+  &__button-publish {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: none;
+    background-color: $primary-cta;
+    width: 100%;
+    height: 2.8rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+
+    @include tablet {
+      width: 10rem;
+    }
+
+    &:hover {
+      background-color: $hover-cta;
+      cursor: pointer;
+    }
+  }
+  &__button-cancel {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    color: $primary-cta;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: auto;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+
+    @include tablet {
+      width: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 3rem;
+    }
+  }
+}
